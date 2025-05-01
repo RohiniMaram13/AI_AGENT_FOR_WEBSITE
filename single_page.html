@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fun Facts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f0f4ff, #fdfcff);
+      color: #2c3e50;
+    }
+
+    /* Nav Styles */
+    nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      font-size: 1.6rem;
+      color: #1a73e8;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 600;
+      font-size: 0.95rem;
+      position: relative;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #1a73e8;
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      color: #1a73e8;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    /* Content Container */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .section {
+      background-color: white;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      transform: translateY(40px);
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .section:nth-child(even) {
+      background: #f6f9fc;
+    }
+
+    .section h2 {
+      color: #1a73e8;
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin: 0.8rem 0 0 0;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #888;
+      padding: 2rem 1rem;
+      border-top: 1px solid #eaeaea;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .links {
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <h1>🌟 Fun Facts</h1>
+      <div class="links">
+        <a href="#fact1">Octopus</a>
+        <a href="#fact2">Eiffel</a>
+        <a href="#fact3">Space</a>
+        <a href="#fact4">Bananas</a>
+        <a href="#fact5">Wombats</a>
+        <a href="#fact6">Rain</a>
+        <a href="#fact7">Heart</a>
+        <a href="#fact8">Jellyfish</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h2>Mind-Blowing Facts You’ll Love</h2>
+    <p>Explore a collection of quirky, surprising, and amazing facts from science, nature, and beyond — all in one beautiful scroll.</p>
+  </div>
+
+  <div class="container">
+    <div class="section" id="fact1">
+      <h2>They Taste With Their Arms</h2>
+      <p>Octopuses can taste with their arms! Each of their suckers is loaded with chemoreceptors that allow them to detect flavors on contact. It's a completely alien way to explore the world — like having taste buds on your fingertips.</p>
+    </div>
+
+    <div class="section" id="fact2">
+      <h2>The Tower That Grows</h2>
+      <p>On hot days, the Eiffel Tower grows taller by over 6 inches due to thermal expansion. Steel expands in heat, making even monuments subtly shift with the seasons. The Tower breathes with the weather!</p>
+    </div>
+
+    <div class="section" id="fact3">
+      <h2>Space Is Not Silent</h2>
+      <p>Space seems silent, but it's not. Vibrations in cosmic plasma can be translated into sound. NASA has recorded “space music” from planets and solar wind. The universe has its own eerie soundtrack.</p>
+    </div>
+
+    <div class="section" id="fact4">
+      <h2>Bananas Are Radioactive</h2>
+      <p>Bananas contain potassium-40, a naturally occurring radioactive isotope. Don’t worry — you’d need to eat millions for it to harm you. The “banana equivalent dose” is even used to explain radiation levels!</p>
+    </div>
+
+    <div class="section" id="fact5">
+      <h2>Wombats Poop Cubes</h2>
+      <p>Wombats from Australia have a unique digestive system that produces cube-shaped poop. This odd feature prevents the poop from rolling away — perfect for marking territory!</p>
+    </div>
+
+    <div class="section" id="fact6">
+      <h2>The Smell of Rain</h2>
+      <p>The refreshing smell after rain is called “petrichor.” It comes from oils in plants and a compound made by soil bacteria. It's a scent that connects science with deep emotional memory.</p>
+    </div>
+
+    <div class="section" id="fact7">
+      <h2>Your Heart Works Hard</h2>
+      <p>Your heart beats around 100,000 times a day. That’s over 35 million times a year. It's one of the most tireless, reliable machines you’ll ever rely on — and it works without a single conscious thought.</p>
+    </div>
+
+    <div class="section" id="fact8">
+      <h2>Immortal Jellyfish</h2>
+      <p>The jellyfish <em>Turritopsis dohrnii</em> can revert its cells to an earlier life stage, effectively starting over. It’s the only known creature that can biologically live forever — unless eaten first.</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Fun Facts | Designed with curiosity and clean code ✨
+  </footer>
+
+</body>
+</html>
